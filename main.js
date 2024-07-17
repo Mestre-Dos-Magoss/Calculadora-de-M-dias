@@ -47,7 +47,7 @@ function atualizaLinhas(){
     const resultadoMediaFinal = document.getElementById('resultadoMediaFInal');
     const resultadoAprovacao = document.getElementById('resultadoDaAprovacao');
 
-    resultadoMediaFinal.innerHTML = media;
+    resultadoMediaFinal.innerHTML = media.toFixed(2);
     resultadoAprovacao.innerHTML = media >=notaMinima ? spanAprov : spanReprov;
 }
 
